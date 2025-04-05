@@ -40,7 +40,8 @@ TS-GUI NT is a graphical user interface built using Python and Pygame, designed 
 4. Run the TS-GUI NT script:  
 
    ```bash
-   python ts_gui.py
+   cd C:\Users\usernamehere\Path\To\Your\LOCALTSEVOVLED REM Replace C:\Users\usernamehere\Path\To\Your\LOCALTSEVOVLED With The Actal Path to your LOCALTSEVOVLED
+   ts-guint REM When ts-guint Is Typed It Should start Evovled Build 6481
    ```
 
 ## **Usage**
