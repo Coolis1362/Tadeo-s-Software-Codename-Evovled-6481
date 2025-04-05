@@ -1,0 +1,83 @@
+<h1 id="-ts-gui-nt-"><strong>TS-GUI NT</strong></h1>
+<p><strong>Codename: Evolved</strong>
+<strong>Build: 6481</strong></p>
+<p>TS-GUI NT is a graphical user interface built using Python and Pygame, designed by <strong>Tadeo&#39;s Software</strong>. It acts as the GUI component for the TS-DOS system, offering a retro-modern aesthetic and interactive functionality that complements command-line operations.</p>
+<h2 id="-features-"><strong>Features</strong></h2>
+<ul>
+<li><strong>About Window</strong>: Displays detailed version information, including the current build and language pack.  </li>
+<li><strong>Interactive Buttons</strong>: Three functional buttons:  <ul>
+<li><strong>Internet</strong>: Opens a web browser (Google).  </li>
+<li><strong>Email</strong>: Launches Outlook.  </li>
+<li><strong>TS-GUI Version</strong>: Displays a custom &quot;About&quot; window with version details.  </li>
+</ul>
+</li>
+<li><strong>Customizable GUI</strong>: Includes hover effects, color customization, and modular design.  </li>
+<li><strong>Start Button</strong>: A dedicated button for quick access to additional functions or apps.</li>
+</ul>
+<h2 id="-setup-and-installation-"><strong>Setup and Installation</strong></h2>
+<h3 id="-requirements-"><strong>Requirements</strong></h3>
+<ul>
+<li>Python <strong>3.9 or later</strong>  </li>
+<li>Pygame library</li>
+</ul>
+<h3 id="-installation-steps-"><strong>Installation Steps</strong></h3>
+<ol>
+<li><p>Install Python:  </p>
+<ul>
+<li>Download and install Python from <a href="https://www.python.org/">python.org</a>.  </li>
+<li>Ensure Python is added to the system PATH.  </li>
+</ul>
+</li>
+<li><p>Install Pygame:  </p>
+<ul>
+<li><p>Open a terminal/command prompt and run:  </p>
+<pre><code class="lang-bash">pip <span class="hljs-keyword">install</span> pygame
+</code></pre>
+</li>
+</ul>
+</li>
+<li><p>Clone or download this repository.  </p>
+</li>
+<li><p>Run the TS-GUI NT script:  </p>
+<pre><code class="lang-bash"><span class="hljs-keyword">python</span> ts_gui.<span class="hljs-keyword">py</span>
+</code></pre>
+</li>
+</ol>
+<h2 id="-usage-"><strong>Usage</strong></h2>
+<ol>
+<li><p><strong>Launch TS-GUI</strong>:  </p>
+<ul>
+<li>Start the program, and the main screen will load with several interactive buttons.  </li>
+</ul>
+</li>
+<li><p><strong>Explore Functionality</strong>:  </p>
+<ul>
+<li><strong>Internet</strong>: Click to open Google in the default web browser.  </li>
+<li><strong>Email</strong>: Click to launch Microsoft Outlook (requires Outlook to be installed).  </li>
+<li><strong>TS-GUI Version</strong>: Displays version details, language pack info, and codename.  </li>
+</ul>
+</li>
+<li><p><strong>Exit</strong>:  </p>
+<ul>
+<li>Close the application using the <code>X</code> button in the top-right corner of the window.</li>
+</ul>
+</li>
+</ol>
+<h2 id="-code-overview-"><strong>Code Overview</strong></h2>
+<h3 id="-1-about-window-"><strong>1. About Window</strong></h3>
+<p>The <code>show_version_info</code> function creates a pop-up window displaying detailed information about the current TS-GUI version.</p>
+<p>```python
+def show_version_info():</p>
+<pre><code># Create a new <span class="hljs-string">"About"</span> surface
+about_width, about_height = <span class="hljs-number">400</span>, <span class="hljs-number">200</span>
+about_screen = pygame.Surface((about_width, about_height))
+about_screen.fill((<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>))  # Set white background
+
+# Add text for the version and language pack
+font = pygame.font.Font(None, <span class="hljs-number">36</span>)
+title = font.render(<span class="hljs-string">"About TS-GUI NT"</span>, True, (<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>))  # Black text
+version = font.render(<span class="hljs-string">"TS-GUI: EVOLVED"</span>, True, (<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>))
+about_screen.blit(title, (<span class="hljs-number">50</span>, <span class="hljs-number">50</span>))
+about_screen.blit(version, (<span class="hljs-number">50</span>, <span class="hljs-number">100</span>))
+...
+</code></pre>
