@@ -19,7 +19,7 @@ TS-GUI NT is a graphical user interface built using Python and Pygame, designed 
 
 ### **Requirements**  
 
-- Python **3.9 or later**  
+- Python **3.13 or later**  
 - Pygame library
 
 ### **Installation Steps**  
