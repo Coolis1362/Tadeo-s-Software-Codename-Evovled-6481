@@ -25,7 +25,8 @@ TS-GUI NT is a graphical user interface built using Python and Pygame, designed 
 ### **Installation Steps**  
 
 1. Install Python:  
-   - Download and install Python from [python.org](https://www.python.org/).  
+   - Download and install Python from [python.org](https://www.python.org/).
+   - Download The Same Python Version Here [apps.microsoft.com/search?query=python&hl=en-us&gl=US](https://apps.microsoft.com/search?query=python&hl=en-us&gl=US)
    - Ensure Python is added to the system PATH.  
 
 2. Install Pygame:  
